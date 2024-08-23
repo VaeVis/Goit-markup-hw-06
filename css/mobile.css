@@ -1,4 +1,181 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    .container{
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .head-nav-menu{
+            flex-direction: column;
+            row-gap: 40px;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: left;
+        }
+
+        .header-contacts {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            }
+
+        .contact-list {
+            flex-direction: column;
+            gap: 0px;
+        }
+
+        .contact-list > li:nth-child(1){
+            color: rgba(77, 90, 229, 1);
+
+        }
+
+        .head-nav-menu > li:nth-child(1)::after{
+            height: 0px;
+        }
+
+        /* Menu pop-out button */
+
+        -----------------------------------
+
+        /*    Hero - section   */
+
+        .hero-section {
+            background-position: center;
+        }
 
 
+        /*  Feature - section  */  
+
+        .feature-list{
+            flex-direction: column;
+            row-gap: 72px;
+        }
+
+        .feature-list > li {
+            width: 288px;
+            text-wrap: wrap;
+        }
+
+            .feature-list > li > h3 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: center;
+            }
+
+            .feature-list > li > p {
+            font-weight: 500;
+            text-align: left;
+            }
+
+            .iconfeat {
+                display: none;
+            }
+
+        /*  Team - Section  */
+
+        .team-container {
+        flex-direction: column;
+        }
+
+        .team-list {
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+        }
+
+        /* Portfolio - section */
+
+        .portfolio-list > li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /*  Footer - section  */
+
+        .wrap-footer{
+            flex-direction: column;
+            row-gap: 72px;
+            padding: 0;
+        }
+
+
+        .logo-descr-footer{
+        text-align: center;
+        }
+
+        .media-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .newsletter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            text-align: center;
+        }
+
+        .label-mail {
+            text-align: center;   
+        }
+
+        /*   Form - backdrop  */
+
+        .modal-window{
+        max-width: 288px;
+        }
+
+            .form-container{
+            width: 100%;
+            padding: 32px 16px 24px;
+            }
+
+            .form-title{
+            font-weight: 500;
+            line-height: 24px;
+            }
+
+
+
+    /* mobile menu */
+
+
+    /*  MENU  */
+    @media (width < 768px) {
+        .header-nav,
+        .header-contacts {
+            display: none;
+        }
+
+        .main-header{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 149px;
+            padding: 16px;
+        }
+        
+        .hamburger-menu{
+            display: block;
+        }
+        
+        .is-open{
+            display: block;
+        }
+    }
 }
