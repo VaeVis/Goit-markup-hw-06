@@ -55,6 +55,13 @@
         row-gap: 12px;   
     }
 
+                            /* FIRST MAIN SECTION (hero) - button & title */
+
+    .hero-section{
+        background-size:fill;
+    }
+
+
                                /* MAIN SECTION FEATURE */
     
     .feature-list {
@@ -138,9 +145,10 @@
 
 
     .modal-window{
-        width: 60%;
+        width: 408px;
         top: 96px;
-        left: 20%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 }

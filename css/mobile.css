@@ -49,13 +49,22 @@
     background-image: linear-gradient(
 	to top, 
 	rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7), 
 	rgba(46, 47, 66, 0.7)), 
-    url("../images/herobackground.jpg");
+    url("../images/herobackgroundmobile.jpg");
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
-    background-position: center;
+    background-position:center;
+}
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(
+            to top,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(./images/herobackgroundmobile@2x.jpg);
+    }
 }
 
 .hero-title {
@@ -421,9 +430,10 @@
 
 .modal-window{
     top: 8px;
-    left: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     position: absolute;
-    width: 90%;
+    width: 288px;
     background: #fcfcfc;
     border-radius: 4px;
 

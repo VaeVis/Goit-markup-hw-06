@@ -66,7 +66,18 @@
 
 
                         /* FIRST MAIN SECTION (hero) - button & title */
-.hero-button:hover,
+
+@media screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(
+            to top,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(./images/herobackground@2x.jpg);
+    }
+}
+
+                        .hero-button:hover,
 .hero-button:focus {color: rgba(255, 255, 255, 1);
         background: rgba(64, 75, 191, 1);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -222,9 +233,7 @@
 /* MODAL WINDOW */
 
 .modal-window{
-    width: 40%;
     top: 80px;
-    left: 30%;
 }
 
 }
