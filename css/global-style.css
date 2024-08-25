@@ -44,6 +44,13 @@ img{
     max-width: 100%;
 }
 
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 16px;
+    
+}
+
 @media screen and (min-resolution: 192dpi) {
     .hero-section {
       background-image: linear-gradient(
