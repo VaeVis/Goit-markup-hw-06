@@ -143,12 +143,14 @@
     
     /*   Form - backdrop  */
 
-
     .modal-window{
         width: 408px;
         top: 96px;
         left: 50%;
-        transform: translateX(-50%);
+    }
+
+    .is-open{
+        display: none;
     }
 
 }
