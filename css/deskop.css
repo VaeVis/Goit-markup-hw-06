@@ -90,8 +90,14 @@
     display: block;
 }
 
+.feature-list{
+    width: 100%;
+    flex-wrap: nowrap;
+}
+    
 .feature-list>li {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px)/4);
+    max-width: 264px;
 }
 
 .feature-list > li > h3 {

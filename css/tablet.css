@@ -67,6 +67,7 @@
     .feature-list {
         flex-direction: row;
         flex-wrap: wrap;
+        width: 736px;
     }
     
     .feature-list>li {
@@ -113,6 +114,7 @@
     .logo-descr-footer{
         margin: 0;
         text-align: left;
+        width: 265px;
     }
     
     /* Social footer  */
@@ -130,6 +132,7 @@
     .media-footer{
         justify-content: flex-start;
         align-items: flex-start;
+        width: 208px;
     }  
     
     .label-mail{
@@ -139,6 +142,7 @@
     .newsletter{
         flex-direction: row;
         align-items: flex-end;
+        width: 456px;
     }
     
     /*   Form - backdrop  */
